@@ -13,7 +13,7 @@ import java.util.Scanner;
  * @author Laura
  */
 public class MainMenu {
-
+    //nem szükséges két tömb
     private final int[] sorszam = new int[5];
     String[] menuPoints = {"SHOW", "ADD", "SEARCH", "DELETE", "EXIT"};
     Scanner scan = new Scanner(System.in);
@@ -29,11 +29,12 @@ public class MainMenu {
         switch (menuSzama) {
             case 1:
                 ShowData show = new ShowData();
-                show.read("D:\\Java tanfolyam\\Java SE\\_Itthoni munkák\\Temp");
+                show.printOut();
+                show.showMenu();
                 break;
             case 2:
                 AddData add = new AddData();
-                add.sout();
+                add.addNewData();
                 break;
             case 3:
                 SearchData search = new SearchData();

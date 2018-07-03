@@ -9,14 +9,10 @@ package logika;
  *
  * @author Laura
  */
-public class Exit {
-    //célszerûbb lenne clear-nek hívni
-    //Legyen singleton
-    //Ne származzon belõle semmi
-     public void exit() {
-        for (int i = 0; i < 20; i++) {
-            System.out.println();
-        }
+public class ModifyData extends Exit{
+
+    void manualModify() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }
